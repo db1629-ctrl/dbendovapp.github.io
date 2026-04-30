@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIS Master - Study App</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="dashboard">
+            <div class="stat-box">
+                <span class="stat-label">Score:</span> 
+                <span id="score-display" class="stat-value">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Streak:</span> 
+                <span id="streak-display" class="stat-value">0</span> <span id="fire-emoji">🔥</span>
+            </div>
+        </header>
+
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-fill"></div>
+        </div>
+
+        <main class="quiz-box">
+            <div class="question-header">
+                <span id="difficulty-badge" class="badge">Difficulty</span>
+                <span id="question-tracker">Question 1 / X</span>
+            </div>
+            
+            <h2 id="question-text">Loading your AIS questions...</h2>
+            
+            <div id="options-container" class="options-grid"></div>
+
+            <div id="feedback-container" class="feedback-box hidden">
+                <h3 id="feedback-title"></h3>
+                <p id="feedback-explanation"></p>
+            </div>
+        </main>
+
+        <div class="controls">
+            <button id="next-btn" class="action-btn hidden">Next Question</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

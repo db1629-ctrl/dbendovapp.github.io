@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "category": "Internal Controls",
+    "difficulty": "Easy",
+    "points": 10,
+    "question": "Which of the following is the best example of segregation of duties in the expenditure cycle?",
+    "options": [
+      "The person who cuts the checks also reconciles the bank statement.",
+      "The person who approves the purchase order also receives the goods.",
+      "The person who signs the checks does not record the disbursements.",
+      "The inventory clerk authorizes purchase requisitions."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Separating the custody of assets (signing checks) from the record-keeping (recording disbursements) prevents an employee from stealing cash and covering it up in the accounting records."
+  },
+  {
+    "id": 2,
+    "category": "The Revenue Cycle",
+    "difficulty": "Medium",
+    "points": 20,
+    "question": "Which document is typically created first in the standard revenue cycle?",
+    "options": [
+      "Sales Invoice",
+      "Packing Slip",
+      "Sales Order",
+      "Remittance Advice"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The cycle begins with a customer placing an order, which generates a Sales Order. The packing slip and invoice come later during shipping and billing."
+  },
+  {
+    "id": 3,
+    "category": "Data Modeling (REA)",
+    "difficulty": "Hard",
+    "points": 30,
+    "question": "In the REA (Resources, Events, Agents) data model, which of the following is considered an 'Event'?",
+    "options": [
+      "Cash",
+      "Customer",
+      "Inventory",
+      "Receiving Customer Payment"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "In REA, Events are the actual business activities or transactions that management wants to collect information about. Cash and Inventory are 'Resources', and a Customer is an 'Agent'."
+  },
+  {
+    "id": 4,
+    "category": "Fraud & Security",
+    "difficulty": "Medium",
+    "points": 20,
+    "question": "An attacker sends an email posing as a bank asking for a user's login credentials. What type of attack is this?",
+    "options": [
+      "Spoofing",
+      "Phishing",
+      "SQL Injection",
+      "Ransomware"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Phishing is a social engineering attack where the attacker masquerades as a trusted entity via email to steal sensitive information."
+  },
+  {
+    "id": 5,
+    "category": "The Expenditure Cycle",
+    "difficulty": "Medium",
+    "points": 20,
+    "question": "Before paying a vendor invoice, the Accounts Payable department should perform a 'three-way match'. What three documents are being matched?",
+    "options": [
+      "Purchase Order, Receiving Report, and Vendor Invoice",
+      "Purchase Requisition, Bill of Lading, and Vendor Invoice",
+      "Sales Order, Packing Slip, and Customer Check",
+      "Check Register, Bank Statement, and General Ledger"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The three-way match ensures you ordered the goods (Purchase Order), actually received them (Receiving Report), and are being billed the correct amount (Vendor Invoice)."
+  }
+]

@@ -1,0 +1,163 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- App Container --- */
+.app-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* --- Gamification Dashboard --- */
+.dashboard {
+    background-color: #0f2c59; /* Corporate Navy */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.stat-value {
+    color: #f8b400; /* Gold for points */
+    margin-left: 5px;
+}
+
+/* --- Progress Bar --- */
+.progress-container {
+    background-color: #e0e0e0;
+    height: 8px;
+    width: 100%;
+}
+
+.progress-fill {
+    background-color: #00b8a9; /* Mint green */
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+/* --- Quiz Area --- */
+.quiz-box {
+    padding: 30px 20px;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.badge {
+    background-color: #e8e8e8;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#question-text {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* --- Options Grid --- */
+.options-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.option-btn {
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+    background-color: #eaf4ff;
+    border-color: #0f2c59;
+}
+
+/* Correct/Incorrect States */
+.option-btn.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.option-btn.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* --- Feedback & Controls --- */
+.feedback-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f1f8ff;
+    border-left: 5px solid #0f2c59;
+}
+
+#feedback-title {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.controls {
+    padding: 0 20px 30px;
+    text-align: right;
+}
+
+.action-btn {
+    background-color: #0f2c59;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #1a428a;
+}
+
+/* --- Utility Classes --- */
+.hidden {
+    display: none !important;
+}
